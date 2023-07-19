@@ -6,3 +6,8 @@ MORSE_CODE = {
   '..-' => 'U', '...-' => 'V', '.--' => 'W', '-..-' => 'X', '-.--' => 'Y',
   '--..' => 'Z'
 }.freeze
+
+def decode_char(code)
+  MORSE_CODE[code]
+end
+
