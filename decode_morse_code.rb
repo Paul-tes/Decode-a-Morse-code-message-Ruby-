@@ -11,3 +11,6 @@ def decode_char(code)
   MORSE_CODE[code]
 end
 
+def decode_word(word)
+  word.split.map { |morse_char| decode_char morse_char }.join
+end
